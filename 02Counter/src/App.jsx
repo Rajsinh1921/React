@@ -18,7 +18,7 @@ function App() {
     if (counter > 0){
     setcounter(counter - 1);
   } else {
-    alert("It can only got till 0");
+    alert("It can only got till 0");  
   }};
 
   return (
