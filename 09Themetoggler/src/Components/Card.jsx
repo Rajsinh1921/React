@@ -4,7 +4,7 @@ export default function Card() {
       <a href="/">
         <img
           className="p-8 rounded-t-lg"
-          src="https://images.pexels.com/photos/18264716/pexels-photo-18264716/free-photo-of-man-people-laptop-internet.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src="https://imgs.search.brave.com/q4IHlaCcrZV0OmhdecR_NZlu8uGaBYJ6nKn_6auTx9E/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFEZVZsSkkwV0wu/anBn"
           alt="product_image1"
         />
       </a>
