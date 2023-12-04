@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Form, Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { login as authLogin } from "../Store/authSlice";
 import { Button, Input, Logo } from "./index";
 import { useDispatch } from "react-redux";
@@ -16,7 +16,6 @@ function Login() {
     setError("");
     try {
       const session = await authService.login(data);
-
       if (session) {
         const userData = await authService.getCurrentUser();
         if (userData) dispatch(authLogin(userData));
