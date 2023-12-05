@@ -7,7 +7,9 @@ export class Service {
   storage;
 
   constructor() {
-    this.client.setEndpoint(conf.appwriteUrl).setProject(appwriteProjectId);
+    this.client
+      .setEndpoint(conf.appwriteUrl)
+      .setProject(conf.appwriteProjectId);
     this.databases = new Databases(this.client);
     this.storage = new Storage(this.client);
   }
@@ -92,8 +94,6 @@ export class Service {
       throw error;
     }
   }
-
-  // Put below methods seprate file after
 
   async uploadFile(file) {
     try {

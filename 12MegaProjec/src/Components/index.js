@@ -20,7 +20,6 @@ export {
   Container,
   LogoutBtn,
   Button,
-  Input,
   Login,
   PostCard,
   Select,
@@ -28,4 +27,5 @@ export {
   Signup,
   PostForm,
   AuthLayout,
+  Input,
 };

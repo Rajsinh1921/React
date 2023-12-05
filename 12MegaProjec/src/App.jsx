@@ -5,6 +5,7 @@ import { login } from "./Store/authSlice";
 import LoadingSpinner from "./Components/LoadingSpinner/LoadingSpinner";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
+import { Outlet } from "react-router-dom";
 function App() {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch;
@@ -22,11 +23,10 @@ function App() {
 
   return (
     <center className="">
-      {loading && <LoadingSpinner />}
-
       <div className="min-h-screen flex flex-wrap contents-between bg-gray-500">
         <div className="w-full block">
           <Header />
+          <main>{loading ? <LoadingSpinner /> : <Outlet />}</main>
           <Footer />
         </div>
       </div>
